@@ -38,22 +38,6 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-/*
-* These are errors which can be triggered by sending invalid data to the
-* pages extension API.
-*
-* These errors will never show to a user unless they are either modifying
-* the core pages extension code OR unless they are writing an extension
-* which makes calls to this extension.
-*
-* Translators: Feel free to not translate these language strings
-*/
 $lang = array_merge($lang, array(
-	'EXCEPTION_FIELD_MISSING'		=> 'Un champ obligatoire est manquant',
-	'EXCEPTION_INVALID_ARGUMENT'	=> 'Argument incorrect spécifié pour `%1$s`. Motif: %2$s',
-	'EXCEPTION_OUT_OF_BOUNDS'		=> 'Le champ `%1$s` a reçu une donnée incohérente',
-	'EXCEPTION_TOO_LONG'			=> 'La donnée saisie était plus longue que la longueur maximale possible.',
-	'EXCEPTION_NOT_UNIQUE'			=> 'La donnée n’était pas unique.',
-	'EXCEPTION_UNEXPECTED_VALUE'	=> 'Le champ `%1$s` a reçu une donnée inattendue. Motif: %2$s',
-	'EXCEPTION_ILLEGAL_CHARACTERS'	=> 'La donnée contenait des caractères interdits.',
+	'PAGE_NOT_AVAILABLE'		=> 'La page “%s” n’est pas disponible.',
 ));
